@@ -52,9 +52,8 @@ const signInWithGoogle = async () => {
         email: user.email,
       })
     }
-  } catch (e: any) {
-    console.error(e)
-    alert(e.message)
+  } catch (e) {
+    alert('Invalid Google sign in.')
   }
 }
 
@@ -62,9 +61,8 @@ const signInWithGoogle = async () => {
 const logInWithEmailAndPassword = async (email: string, password: string) => {
   try {
     await signInWithEmailAndPassword(auth, email, password)
-  } catch (e: any) {
-    console.error(e)
-    alert(e.message)
+  } catch (e) {
+    alert('Invalid username / password.')
   }
 }
 

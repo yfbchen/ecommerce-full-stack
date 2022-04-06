@@ -1,7 +1,10 @@
 const ROUTES = {
-  HOME: '/',
   CHECKOUT: '/checkout',
-  SHOP: '/shop'
+  CONTACT: '/contact',
+  HOME: '/',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  SHOP: '/shop',
 }
 
 export default ROUTES
